@@ -6,9 +6,9 @@
 */
 int main(void)
 {
-	int x = 0
-		/*zero to nine */
+	int x = 0;
 	while (x < 10)
+		/*zero to nine */
 	{
 		putchar(x + '0');
 			x++;
