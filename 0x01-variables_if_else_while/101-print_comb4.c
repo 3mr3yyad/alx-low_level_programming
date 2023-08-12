@@ -21,7 +21,7 @@ int main(void)
 				putchar(x + 48);
 				putchar(y + 48);
 				putchar(z + 48);
-					if (x != 9 || y != 8 || z != 7)
+					if (x != 8 || y != 9 || z != 7)
 					{
 						putchar(',');
 						putchar(' ');
