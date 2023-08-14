@@ -12,9 +12,18 @@ int main(void)
 		x = y;
 		while (y <= 99)
 		{
-			if(x != z)
+			if (x != z)
 			{
-			
+			putchar((x / 10) + 48);
+			putchar((x % 10) + 48);
+			putchar(' ');
+			putchar((y / 10) + 48);
+			putchar((y % 10) + 48);
+				if (x != 98 || y != 99)
+				{
+				putchar(',');
+				putchar(' ');
+				}
 			}
 		y++;
 		}
