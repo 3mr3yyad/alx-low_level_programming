@@ -7,12 +7,13 @@
 int main(void)
 {
 	int x = 0, y;
+	/* here we go */
 	while (x <= 99)
 	{
 		x = y;
 		while (y <= 99)
 		{
-			if (x != z)
+			if (x != y)
 			{
 			putchar((x / 10) + 48);
 			putchar((x % 10) + 48);
