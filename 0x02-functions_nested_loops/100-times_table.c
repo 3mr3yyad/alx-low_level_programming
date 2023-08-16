@@ -33,7 +33,7 @@ void print_times_table(int n)
 				}
 				else if (x <= 99 && x >= 10)
 					_putchar((x / 10) + 48);
-					_putchar((x % 10) = 48);
+					_putchar((x % 10) + 48);
 			}
 			_putchar('\n');
 		}
