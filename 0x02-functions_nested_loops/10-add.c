@@ -2,15 +2,16 @@
 
 /**
  * add - add two
- * @x: frist
- * @y: sec
  *
- * Return: sum x And y
+ * @a: frist
+ * @b: sec
+ *
+ * Return: sum a And b
 */
 
-int add(int x, int y)
+int add(int a, int b)
 {
-	int sum = x + y;
+	int sum = a + b;
 
 	return (sum);
 }
