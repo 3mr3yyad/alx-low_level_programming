@@ -20,6 +20,8 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 
+				x = z * y;
+
 				if (x <= 9)
 					_putchar(' ');
 
