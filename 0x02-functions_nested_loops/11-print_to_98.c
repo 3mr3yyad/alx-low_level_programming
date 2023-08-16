@@ -2,18 +2,19 @@
 
 /**
  * print_to_98 - start
+ *
  * @n: input
 */
 
 void print_to_98(int n)
 {
-	int count;
+	int x;
 
 	if (n > 98)
-		for (count = n; count > 98; count--)
-			printf("%d, ", count);
+		for (x = n; x > 98; x--)
+			printf("%d, ",  x);
 	else
-		for (count = n; count < 98; count++)
-			printf("%d, ", count);
+		for (x = n; x < 98; x++)
+			printf("%d, ", x);
 	printf("98\n");
 }
