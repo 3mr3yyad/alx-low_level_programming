@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * tt - print 9 taples
+ * time_table - print 9 taples
  * Example Table
  * 0, 0, 0, 0, ..
  * 0, 1, 2, 2, ..
 */
-void tt(void)
+void time_table(void)
 {
 	int num, mult, prod;
 
