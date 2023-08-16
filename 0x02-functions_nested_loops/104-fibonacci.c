@@ -33,7 +33,7 @@ int numLength(int x)
 int main(void)
 {
 	int a, b;
-	unsigned long f1 = 1, f2 = 2, sum, mx 100000000, f1o = 0, f2o = 0, sumo = 0;
+	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, f1o = 0, f2o = 0, sumo = 0;
 
 	for (a = 1; a <= 98; a++)
 	{
