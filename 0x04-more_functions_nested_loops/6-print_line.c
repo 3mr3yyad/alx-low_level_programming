@@ -3,7 +3,6 @@
 /**
  * print_line - main
  * @n: int
- * Return: always 0
 */
 
 void print_line(int n)
@@ -15,7 +14,7 @@ void print_line(int n)
 	else
 	{
 		for (lll = 1; lll <= n; lll++)
-			_putchar('_');
+			_putchar(95);
 		_putchar('\n');
 	}
 }
