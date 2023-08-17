@@ -14,6 +14,6 @@ void print_numbers(void)
 		_putchar(x + 48);
 		x++;
 	}
-	while (x >= 0 && x < 10)
+	while (x >= 0 && x < 10);
 		_putchar('\n');
 }
