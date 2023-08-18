@@ -18,7 +18,7 @@ void print_diagonal(int n)
 			for (spc = 1; spc <= s; spc++)
 				_putchar(' ');
 		}
-		_putchar(92);
+		_putchar('\\');
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
