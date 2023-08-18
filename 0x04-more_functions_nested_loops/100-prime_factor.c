@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <math.h>
-#include "main.h"
 
 /**
  * squareRoot - main
@@ -10,17 +8,16 @@
 
 double squareRoot(double x)
 {
-	float sqrt, tmp
 
-	tmp = 0;
-	sqrt = x / 2;
+	float t = 0;
+	float q = x / 2;
 
-	while (sqrt != tmp)
+	while (q != t)
 	{
-		tmp = sqrt;
-		sqrt = (x / tmp + tmp) / 2;
+		t = q;
+		q = (x / t + t) / 2;
 	}
-	return (sqrt);
+	return (q);
 }
 
 /**
