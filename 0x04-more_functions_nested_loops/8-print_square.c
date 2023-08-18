@@ -9,12 +9,19 @@ void print_square(int size)
 {
 	int rw, clmn;
 
-	for (rw = 1; rw <= size; rw++)
+	if (size <= 0)
 	{
-		for (clmn = 1; clmn <= size; clmn++)
-		{
-			_putchar(35);
-		}
 		_putchar('\n');
+	}
+	else
+	{
+		for (rw = 0; rw <= size; rw++)
+		{
+			for (clmn = 0; clmn <= size; clmn++)
+			{
+				_putchar(35);
+			}
+			_putchar('\n');
+		}
 	}
 }
