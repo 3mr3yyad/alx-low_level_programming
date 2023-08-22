@@ -14,7 +14,7 @@ int _atoi(char *s)
 	do {
 		if (*s == '-')
 			x *= -1;
-		else if (*s >= '0' && *s < '10')
+		else if (*s >= '0' && *s <= '9')
 			ux = (ux * 10) + (*s - '0');
 		else if (ux > 0)
 			break;
