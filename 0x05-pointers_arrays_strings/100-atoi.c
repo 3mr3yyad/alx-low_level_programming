@@ -8,8 +8,8 @@
 
 int _atoi(char *s)
 {
-	unsigned int = ux;
-	int x = 0;
+	unsigned int ux = 0;
+	int x = 1;
 
 	do {
 		if (*s == '-')
