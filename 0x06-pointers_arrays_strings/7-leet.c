@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - mozart was genuis
- * @leet: @a
+ * leet - mozart was genuis
  * @a: Leet
  * Return: v
 */
