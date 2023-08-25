@@ -19,7 +19,9 @@ char *leet(char *a)
 		for (x = 0; x < sizeof(l) / sizeof(char); x++)
 		{
 			if (*a == l[x] || *a == l[x] + 32)
+			{
 				*a = 48 + n[x];
+			}
 		}
 		a++;
 	}
