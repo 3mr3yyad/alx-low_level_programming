@@ -26,7 +26,7 @@ int sq(int n, int x)
 	{
 		return (x);
 	}
-	else if (x * X < n)
+	else if (x * x < n)
 	{
 		return (sq(n, x + 1));
 	}
