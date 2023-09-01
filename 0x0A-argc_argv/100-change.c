@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		{
 			if (s >= cs[x])
 			{
-				lc += s / cs[i];
+				lc += s / cs[x];
 				s = s % cs[x];
 				if (s % cs[x] == 0)
 				{
