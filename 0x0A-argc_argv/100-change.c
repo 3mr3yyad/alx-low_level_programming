@@ -12,11 +12,9 @@ int main(int argc, char *argv[])
 {
 	if (argc == 2)
 	{
-		int x, lc, s;
+		int x, lc = 0, s = atoi(argv[1]);
 		int cs[] = {25, 10, 5, 2, 1};
 
-		lc = 0;
-		s = atoi(arvgv[1]);
 		for (x = 0; x < 5; x++)
 		{
 			if (s >= cs[x])
