@@ -26,7 +26,7 @@ int strln(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	int b, c, x;
-	char *c;
+	char *z;
 
 	if (s1 == NULL)
 		s1 = "\0";
@@ -35,7 +35,7 @@ char *str_concat(char *s1, char *s2)
 
 	b = strln(s1);
 	c = strln(s2);
-	c = malloc((b = c) * sizeof(char) + 1);
+	z = malloc((b = c) * sizeof(char) + 1);
 
 	if (m == 0)
 		return (0);
@@ -43,11 +43,11 @@ char *str_concat(char *s1, char *s2)
 	for (x = 0; x <= b + c; x++)
 	{
 		if (x < b)
-			c[x] = s1[x];
+			z[x] = s1[x];
 		else
-			c[x] = s2[x - b];
+			z[x] = s2[x - b];
 	}
 	c[x] = '\0';
 
-	return (c);
+	return (z);
 }
