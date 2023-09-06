@@ -27,5 +27,5 @@ char *_strdup(char *str)
 		for (; x < y; x++)
 			c[x] = str[x];
 	}
-	return (c)
+	return (c);
 }
