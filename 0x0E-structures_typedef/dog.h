@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
 #ifndef dog_h
 #define dog_h
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct dog - main
