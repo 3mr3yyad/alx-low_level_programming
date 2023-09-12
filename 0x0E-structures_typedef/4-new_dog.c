@@ -2,38 +2,74 @@
 #include <stdlib.h>
 
 /**
+ * strln - main
+ * str: input
+ * Return: l
+*/
+
+int strln(const char *str)
+{
+	int l = 0;
+
+	while (*str++)
+		l++;
+	return (l);
+}
+/**
+ * strcp - main
+ * @src: input
+ * @dst: input1
+ * Return: dst
+*/
+
+char *strcp(char *src, char *dst)
+{
+	int x;
+
+	for (x = 0; src[x]; x++)
+		dst[x] = src[x];
+	dst[x] = '\0';
+	return (dst);
+}
+
+/**
  * new_dog - main
  * @name: input
  * @age: input1
  * @owner: input2
- * Return: p
+ * Return: dog
 */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *p;
+	dog_t *dog;
 
-	p = malloc(sizeof(dog_t));
-
-	if (p == NULL)
+	if (!name || age < 0 || !owner)
 		return (NULL);
 
-	if (name == NULL)
+	dog = (dog_t *) malloc(sizeof(dog_t));
+
+	if (dog == NULL)
+		return (NULL);
+
+
+	dog->name = malloc(sizeof(char) * (strln(name) + 1));
+	if ((*dog).name == NULL)
 	{
-		free(p);
-		free(owner);
+		free(dog);
 		return (NULL);
 	}
 
-	if (owner == NULL)
+	dog->owner = malloc(sizeof(char) * (strln(owner) + 1));
+	if ((*dog).owner == NULL)
 	{
-		free(p);
-		free(name);
+		free(dog->name);
+		free(dog);
 		return (NULL);
 	}
 
-	p->name = name;
-	p->age = age;
-	p->owner = owner;
-	return (p);
+	dog->name = stcp(dog->name, name;
+	dog->age = age;
+	dog->owner = strcp(dog->owner, owner);
+	return (dog);
 }
