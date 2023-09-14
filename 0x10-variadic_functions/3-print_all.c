@@ -23,7 +23,7 @@ void fchar(char *separator, va_list l)
 
 void fint(char *separator, va_list l)
 {
-	printf("%s%f", separator, va_arg(l, int));
+	printf("%s%d", separator, va_arg(l, int));
 }
 
 /**
