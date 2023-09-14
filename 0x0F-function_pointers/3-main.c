@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - mmeh
@@ -9,8 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	int x, y, result;
-	int (*p)(int, int);
+	int a, b;
+	int (*o)(int, int);
 
 	if (argc != 4)
 	{
@@ -18,20 +20,25 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	x = atoi(argc[1]);
-	y = atoi(argv[3]);
-
-	p = get_op_func(argv[2]);
-
-	if (p == NULL)
+	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	result = p(x, y);
+	o = get_op_func(argv[2]);
 
-	printf("%d\n", result);
+	if (o == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+
+
+	printf("%d\n", o(a, b));
 
 	return (0);
 }
