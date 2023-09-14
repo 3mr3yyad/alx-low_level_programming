@@ -12,7 +12,7 @@ int sum_them_all(const unsigned int n, ...)
 	int a = 0, x = n;
 	va_list y;
 
-	if (!n)
+	if (n < 1)
 	{
 		return (0);
 	}
