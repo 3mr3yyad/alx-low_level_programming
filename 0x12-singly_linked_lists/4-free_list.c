@@ -7,7 +7,7 @@
 
 void free_list(list_t *head)
 {
-	list_t *n, nxt_n;
+	list_t *n, *nxt_n;
 
 	if (!head)
 		return;
