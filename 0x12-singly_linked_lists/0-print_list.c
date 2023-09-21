@@ -6,7 +6,7 @@
  * Return: x
 */
 
-int strlng(char *c)
+int strlen(char *c)
 {
 	int x = 0;
 
@@ -31,7 +31,7 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		printf("[%d] %s\n", strlng(h->str), h->str ? h->str : "(nil)");
+		printf("[%d] %s\n", strlen(h->str), h->str ? h->str : "(nil)");
 		h = h->next;
 		x++;
 	}
