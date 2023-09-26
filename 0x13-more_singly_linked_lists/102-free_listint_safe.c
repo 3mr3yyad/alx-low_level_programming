@@ -1,5 +1,7 @@
 #include "lists.h"
 
+#include <stdlib.h>
+
 /**
  * find_listint_loop - main
  * @head: head node
@@ -40,7 +42,7 @@ size_t free_listint_safe(listint_t **h)
 	if (h == NULL || *h == NULL)
 		return (0);
 
-	loop = find_listint_loop(*h);
+	pnode = find_listint_loop(*h);
 
 	for (lng = 0; (*h != pnode || loop) && *h != NULL; *h = next)
 	{
