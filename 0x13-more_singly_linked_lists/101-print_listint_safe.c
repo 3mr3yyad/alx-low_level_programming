@@ -1,5 +1,8 @@
 #include "lists.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * r_ - main
  * @list: input
@@ -12,6 +15,8 @@ const listint_t **r_(const listint_t **list, size_t size, const listint_t *new)
 {
 	const listint_t **newlist;
 	size_t x;
+
+	newlist = malloc(size * sizeof(listint_t *));
 
 	if (newlist == NULL)
 	{
