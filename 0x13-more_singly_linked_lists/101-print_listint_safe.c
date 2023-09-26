@@ -1,15 +1,14 @@
 #include "lists.h"
 
 /**
- * rev_ - main
+ * r_ - main
  * @list: input
  * @size: input1
  * @new: new node
  * Return: newlist
 */
 
-const listint_t **rev_(const listint_t **list, size_t size,
-		const listint_t *new)
+const listint_t **r_(const listint_t **list, size_t size, const listint_t *new)
 {
 	const listint_t **newlist;
 	size_t x;
@@ -52,7 +51,7 @@ size_t print_listint_safe(const listint_t *head)
 			}
 		}
 		i++;
-		list = rev_(list, i, head);
+		list = r_(list, i, head);
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}
