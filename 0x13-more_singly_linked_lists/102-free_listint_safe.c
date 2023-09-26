@@ -8,7 +8,7 @@
  * Return: NULL or end
 */
 
-listint_t *find_listint_loop(listont_t *head)
+listint_t *find_listint_loop(listint_t *head)
 {
 	listint_t *ptr, *end;
 
@@ -51,7 +51,7 @@ size_t free_listint_safe(listint_t **h)
 
 		if (*h == pnode && loop)
 		{
-			if (pnood == pnode->next)
+			if (pnode == pnode->next)
 			{
 				free(*h);
 				break;
@@ -61,7 +61,7 @@ size_t free_listint_safe(listint_t **h)
 			free((*h)->next);
 			loop = 0;
 		}
-		free(*h)
+		free(*h);
 	}
 	*h = NULL;
 	return (lng);
